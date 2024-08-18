@@ -5,7 +5,7 @@ FROM jboss/wildfly:latest
 ENV DEPLOYMENT_DIR /opt/jboss/wildfly/standalone/deployments/
 
 # Copy the WAR file to the WildFly deployments directory
-COPY target/thalesmvc-0.1 $DEPLOYMENT_DIR
+COPY target/thalesmvc-0.1.war $DEPLOYMENT_DIR
 
 # Expose the default WildFly port
 EXPOSE 8080
