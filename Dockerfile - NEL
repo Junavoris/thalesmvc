@@ -1,0 +1,14 @@
+# Use the official WildFly image as the base
+FROM jboss/wildfly:latest
+
+# Set the environment variable for the deployment directory
+ENV DEPLOYMENT_DIR /opt/jboss/wildfly/standalone/deployments/
+
+# Copy the WAR file to the WildFly deployments directory
+COPY target/thalesmvc-0.1 $DEPLOYMENT_DIR
+
+# Expose the default WildFly port
+EXPOSE 8080
+
+# Start WildFly server
+CMD ["/opt/jboss/wildfly/bin/standalone.sh", "-b", "0.0.0.0"]

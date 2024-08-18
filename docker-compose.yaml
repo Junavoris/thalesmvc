@@ -1,0 +1,6 @@
+# docker-compose.yaml
+services:
+  java:
+    build: '.'
+    ports:
+      - '8080:8080'
