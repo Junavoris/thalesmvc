@@ -1,3 +1,8 @@
+## Prerequisites
+
+- **Java Development Kit (JDK)**: Ensure JDK-17 is installed.
+- **Maven**: Ensure Maven 3.9.8 is installed.
+
 1. **Command to Run Application**:
    - `mvn clean spring-boot:run` starts the Spring Boot application.
 
