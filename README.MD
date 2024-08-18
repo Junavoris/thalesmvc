@@ -3,3 +3,6 @@
 
 2. **Accessing the Application**:
    - The application will be accessible at `http://localhost:8080/employees-view.html`
+
+3. **Command to generate WAR**:
+   - `mvn clean package` Creates the WAR file in the `target/thalesmvc-0.1.war` directory
